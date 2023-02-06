@@ -11,7 +11,7 @@ describe('<ChannelItem />', () => {
     cy.get('[data-cy="channel-item"]').find('span').should('have.text', 'your contact here')
   })
 
-  it.only('should render all children components: button and icon collection', () => {
+  it('should render all children components: button and icon collection', () => {
     cy.mount(ChannelItem, {
       props: {
         label: 'test@trengo.com',

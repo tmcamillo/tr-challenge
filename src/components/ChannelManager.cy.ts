@@ -69,7 +69,7 @@ describe('<ChannelManager />', () => {
   })
 
   describe('Reorder the list', () => {
-    it.only('should drag the item up and reorder the list', () => {
+    it('should drag the item up and reorder the list', () => {
       createChannelsList()
       saveCurrentList()
       cy.get('[data-cy="channel-manager"]').find('[data-cy="channel-item"]').eq(0).as('first')
