@@ -2,9 +2,10 @@
 
 - Vue3
 - Typescript
-- Vite
+- Pinia
 - Tailwind
 - Cypress with components
+- Vite
 
 Running the project:
 
@@ -13,4 +14,5 @@ Running the project:
 Running the tests:
 
 ### `npx cypress open`
+
 then on the launching browser go to the menu option SPECS and choose one component to run it's test.
