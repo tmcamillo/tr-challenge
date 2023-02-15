@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { IconsName } from '../../interfaces/interfaces';
+
 interface PropsSquerIcon {
-  iconName?: 'fa-regular fa-envelope' | 'fa-solid fa-phone' | 'fa-brands fa-whatsapp'
+  iconName?: IconsName
 }
 
 const props = withDefaults(defineProps<PropsSquerIcon>(), {

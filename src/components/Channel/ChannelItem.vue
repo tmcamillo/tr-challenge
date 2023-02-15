@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import Button from './Button.vue'
-import SquareIcon from './SquareIcon.vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { IconsName } from '../../interfaces/interfaces'
+import SquareIcon from '../Commons/SquareIcon.vue'
+import Button from '../Commons/Button.vue'
 
 interface PropsChannelItem {
   label: string
   index: number
-  iconName: 'fa-regular fa-envelope' | 'fa-solid fa-phone' | 'fa-brands fa-whatsapp'
+  iconName: IconsName
 }
 const props = defineProps<PropsChannelItem>()
 

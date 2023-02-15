@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { Channel } from '../../interfaces/interfaces'
+
 import draggable from 'vuedraggable'
-import { Channel } from '../interfaces/interfaces'
+
 import InputAddChannel from './InputAddChannel.vue'
 import ChannelItem from './ChannelItem.vue'
-import Button from './Button.vue'
+import Button from '../Commons/Button.vue'
 
-import { useChannelsStore } from '../stores/channels'
+import { useChannelsStore } from '../../stores/channels'
 import { storeToRefs } from 'pinia'
 
 const storeChannels = useChannelsStore()

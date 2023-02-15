@@ -7,7 +7,6 @@ export const useChannelsStore = defineStore({
     persistedChannels: [] as Channel[],
     channelsList: [] as Channel[],
     isChanged: false,
-    id: 0
   }),
   actions: {
     addChannel(item: Channel) {

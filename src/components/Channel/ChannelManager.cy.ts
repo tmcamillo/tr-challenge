@@ -1,7 +1,7 @@
 import ChannelManager from './ChannelManager.vue'
 
 import { createPinia, storeToRefs } from 'pinia'
-import { useChannelsStore } from '../stores/channels'
+import { useChannelsStore } from '../../stores/channels'
 
 const pinia = createPinia()
 const channels = useChannelsStore(pinia)
@@ -9,7 +9,7 @@ const { isChanged, channelsList, persistedChannels } = storeToRefs(useChannelsSt
 
 describe('<ChannelManager />', () => {
   beforeEach(() => {
-    ;(channelsList.value = []), (persistedChannels.value = [])
+    (channelsList.value = []), (persistedChannels.value = [])
     cy.mount(ChannelManager, { channels })
   })
 
